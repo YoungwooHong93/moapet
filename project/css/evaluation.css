@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    background: url(../image/강아지배경.jfif);
+}
+
+li {
+    cursor: pointer;
+}
+
+/* ========================================================== */
+
+header {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+/* ====================   우측 상단   ======================== */
+
+header div:first-child {
+    display: flex;
+    justify-content: right;
+}
+
+.top_Op a {
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.top_Op li {
+    display: inline-flex;
+
+}
+
+/* ===================   상단 로고 및 검색 바     ============= */
+
+header div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin-right: 25px;
+}
+
+header input,
+header span {
+    height: 40px;
+}
+
+header input {
+    border: none;
+    background: url(../image/search_bg.gif);
+    width: 393px;
+    text-align: center;
+}
+
+/* ==========================  메뉴  ========================== */
+
+#menu_list,
+#menu>ul,
+.dog,
+.cat,
+.sale {
+    display: flex;
+
+}
+
+#menu>ul {
+    width: 110%
+}
+
+#menu>ul>li:nth-child(2) {
+    flex: auto;
+}
+
+#menu_list>li {
+    position: relative;
+    width: 25%;
+}
+
+#menu_list ul {
+    display: none;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#menu_list {
+    height: 100%;
+    background: url(../image/top_menu_bg.gif) center top/ 200% 115% no-repeat;
+}
+
+
+#menu_list>li>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: violet;
+}
+
+#menu_list>li:hover,
+.dog>li:hover,
+.cat>li:hover,
+.sale>li:hover {
+    text-decoration: underline;
+}
+
+#menu_list>li:hover ul {
+    margin-top: 10px;
+    opacity: 0.8;
+    color: white;
+    background-color: black;
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+#menu_list li {
+    text-align: center;
+}
+
+/* ======================   메인 Section   =================== */
+
+main,
+.main_container,
+.slide_container {
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1000px;
+    height: 1000px;
+    margin: 10px auto;
+}
+
+.main_container>a>img {
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+}
+
+.slide_container {
+    width: 750px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide_container>h2 {
+    text-indent: -9999px;
+    font-size: 0.1px;
+}
+
+.slide_list {
+    position: absolute;
+    display: flex;
+    left: 0;
+    transition: left .4s .1s;
+}
+
+.slide_list img {
+    width: 750px;
+}
+
+.main_container a {
+    top: 13%;
+}
+
+/* ==================== 버튼 관련 aside ======================= */
+
+.btn_back,
+.btn_forward {
+    position: absolute;
+    z-index: 1;
+}
+
+.btn_back {
+    right: 90%;
+}
+
+.btn_forward {
+    left: 90%;
+}
+
+.nonVisible {
+    display: none;
+}
+
+/* ==================== 메인 aside =========================== */
+
+aside {
+    width: 20%;
+    position: absolute;
+    left: 0;
+}
+
+aside>ul {
+    border: 1px solid gray;
+    background-color: white;
+}
+
+aside img {
+    width: 200px;
+    vertical-align: top;
+}
+
+aside li>a {
+    text-decoration: none;
+    line-height: 30px;
+    color: black;
+    padding-left: 20px;
+}
+
+aside li>a:hover {
+    text-decoration: underline;
+    background-color: black;
+    background: url(../image/화살표.gif);
+}
+
+/* ==================== 메인 article ========================= */
+
+article {
+    position: absolute;
+    width: 750px;
+    top: 36%;
+}
+
+article span>img {
+    width: 100%;
+}
+
+article ul {
+    background-color: white;
+    display: flex;
+    flex-flow: wrap;
+}
+
+article a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+}
+
+article a>img {
+    width: 175px;
+    margin: 4px;
+    border: 1px solid grey;
+}
+
+/* ==================== footer ========================= */
+
+footer>div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+div>p {
+    width: 1000px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+div>p:first-child {
+    border: 1px solid grey;
+}
+
+div>p:last-child {
+    font-size: 14px;
+    line-height: 20px;
+}
